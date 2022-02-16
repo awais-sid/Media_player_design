@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Media Player</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper d-flex align-items-stretch bg-dark">
+      <nav
+        id="sidebar"
+        class="bg-dark"
+        style="
+          background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+        "
+      >
+        <h1><a href="index.html" class="logo">M.</a></h1>
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <a href="index.html"><span class="fa fa-home"></span> Home</a>
+          </li>
+          <li>
+            <a href="#"><span class="fa fa-film"></span> Movies & Shows</a>
+          </li>
+          <li>
+            <a href="#"><span class="fa fa-sticky-note"></span> Music</a>
+          </li>
+          
+        </ul>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content" class="p-2 px-md-4">
+     <nav class="navbar navbar-expand-lg navbar-light bg-dark mb-2 gradient">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-dark">
+              <i class="fa fa-bars"></i>
+              <span class="sr-only">Toggle Menu</span>
+            </button>
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <h1 class="home-heading mt-3 text-light">Movies & Music</h1>
+                </li>
+              </ul>
+          </div>
+        </nav>
+
+        <section id="continue-watching">
+          <h1 class="home-heading mt-3 text-light">Home</h1>
+          <div class="title mt-4">
+            <h5 class="text-light">Continue Watching</h5>
+          </div>
+          <div class="container-fluid">
+            <!--Carousel Wrapper-->
+            <div
+              id="multi-item-example-three"
+              class="carousel slide carousel-multi-item"
+              data-ride="carousel"
+            >
+              <!--Controls-->
+              <div class="controls-top">
+                <a
+                  class="btn-floating text-muted"
+                  href="#multi-item-example-three"
+                  data-slide="prev"
+                  ><i class="fa fa-chevron-left"></i
+                ></a>
+                <a
+                  class="btn-floating text-muted"
+                  href="#multi-item-example-three"
+                  data-slide="next"
+                  ><i class="fa fa-chevron-right"></i
+                ></a>
+              </div>
+              <!--/.Controls-->
+
+              <!--Slides-->
+              <div class="carousel-inner" role="listbox">
+                <!--First slide-->
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-lg-2 col-md-4">
+                      <a href="profile.html">
+                        <div class="card bg-transparent" style="border: none" ;>
+                          <img
+                            src="./images/movie1.jpg"
+                            alt="member"
+                            class="card-img-top rounded card-border"
+                          />
+                          <div class="overlay">
+                            <a href="profile.html" class="icon" title="User Profile">
+                              <i class="fa fa-play-circle"></i>
+                            </a>
+                          </div>
+                        
+                        </div>
+                          <div class="card-content">
+                            <h5 class="pt-2 mb-0">World War Z</h5>
+                          </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                      <div class="card bg-transparent" style="border: none" ;>
+                        <img
+                          src="./images/m1.jpg"
+                          alt="member"
+                          class="card-img-top rounded card-border"
+                        />
+                          <div class="overlay">
+                            <a href="profile.html" class="icon" title="User Profile">
+                              <i class="fa fa-play-circle"></i>
+                            </a>
+                          </div>
+                      </div>
+                       <div class="card-content">
+                          <h5 class="pt-2 mb-0">The Witcher</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                      <div class="card bg-transparent" style="border: none" ;>
+                        <img
+                          src="./images/movie3.jpg"
+                          alt="member"
+                          class="card-img-top rounded card-border"
+                        />
+                         <div class="overlay">
+                            <a href="profile.html" class="icon" title="User Profile">
+                              <i class="fa fa-play-circle"></i>
+                            </a>
+                          </div>
+          
+                      </div>
+                      <div class="card-content">
+                          <h5 class="pt-2 mb-0">Extraction</h5>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-2 col-md-4">
+                      <div class="card bg-transparent" style="border: none" ;>
+                        <img
+                          src="./images/mov4.jpg"
+                          alt="member"
+                          class="card-img-top rounded"
+                        />
+                        <div class="card-content">
+                          <h5 class="pt-2 mb-0">Inception</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                      <div class="card bg-transparent" style="border: none" ;>
+                        <img
+                          src="./images/mov5.jpg"
+                          alt="member"
+                          class="card-img-top rounded"
+                        />
+                        <div class="card-content">
+                          <h5 class="pt-2 mb-0">Fight Club</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                      <div class="card bg-transparent" style="border: none" ;>
+                        <img
+                          src="./images/mo6.jpg"
+                          alt="member"
+                          class="card-img-top rounded"
+                        />
+                        <div class="card-content">
+                          <h5 class="pt-2 mb-0">Dunkirk</h5>
+                        </div>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+
+                <!--/.First slide-->
+              </div>
+              <!--/.Slides-->
+            </div>
+            <!--/.Carousel Wrapper-->
+          </div>
+        </section>
+
+        <section id="web-shows" class="py-5">
+          <div class="title mt-4">
+            <h5 class="text-light">
+              What's On Now - <span class="text-muted">Live TV</span>
+            </h5>
+          </div>
+          <div class="container-fluid">
+            <!--Carousel Wrapper-->
+            <div
+              id="multi-item-example"
+              class="carousel slide carousel-multi-item"
+              data-ride="carousel"
+            >
+              <!--Controls-->
+              <div class="controls-top">
+                <a
+                  class="btn-floating text-muted"
+                  href="#multi-item-example"
+                  data-slide="prev"
+                  ><i class="fa fa-chevron-left"></i
+                ></a>
+                <a
+                  class="btn-floating text-muted"
+                  href="#multi-item-example"
+                  data-slide="next"
+                  ><i class="fa fa-chevron-right"></i
+                ></a>
+              </div>
+              <!--/.Controls-->
+
+              <!--Slides-->
+              <div class="carousel-inner" role="listbox">
+                <!--First slide-->
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                      <div
+                        class="card bg-transparent"
+                        style="border: none; width: 320px"
+                        ;
+                      >
+                        <img
+                          src="./images/nosey.png"
+                          alt="member"
+                          class="card-img-top rounded card-border"
+                        />
+                             <div class="overlay">
+                            <a href="profile.html" class="icon" title="User Profile">
+                              <i class="fa fa-play-circle"></i>
+                            </a>
+                          </div>
+                        
+                      </div>
+                        <div class="card-content">
+                          <h5 class="pt-2 mb-0 text-light">Judge Dad</h5>
+                          <p class="text-muted">Today at 11:09AM</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div
+                        class="card bg-transparent"
+                        style="border: none; width: 300px"
+                        ;
+                      >
+                        <img
+                          src="./images/farmy.jpg"
+                          alt="member"
+                          class="card-img-top rounded card-border"
+                        />
+                           <div class="overlay">
+                            <a href="profile.html" class="icon" title="User Profile">
+                              <i class="fa fa-play-circle"></i>
+                            </a>
+                          </div>
+                       
+                      </div>
+                       <div class="card-content">
+                          <h5 class="pt-2 mb-0 text-light">
+                            FailArmy Playlist
+                          </h5>
+                          <p class="text-muted">Today at 12:09AM</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div
+                        class="card bg-transparent"
+                        style="border: none; width: 300px"
+                        ;
+                      >
+                        <img
+                          src="./images/nos.png"
+                          alt="member"
+                          class="card-img-top rounded card-border"
+                        />
+                           <div class="overlay">
+                            <a href="profile.html" class="icon" title="User Profile">
+                              <i class="fa fa-play-circle"></i>
+                            </a>
+                          </div>
+                        
+                      </div>
+                      <div class="card-content">
+                          <h5 class="pt-2 mb-0 text-light">Judge Dad</h5>
+                          <p class="text-muted">Today at 11:09AM</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--/.First slide-->
+
+                <!--Second slide-->
+              <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                      <div
+                        class="card bg-transparent"
+                        style="border: none; width: 320px"
+                        ;
+                      >
+                        <img
+                          src="./images/nosey.png"
+                          alt="member"
+                          class="card-img-top rounded card-border"
+                        />
+                             <div class="overlay">
+                            <a href="profile.html" class="icon" title="User Profile">
+                              <i class="fa fa-play-circle"></i>
+                            </a>
+                          </div>
+                        
+                      </div>
+                        <div class="card-content">
+                          <h5 class="pt-2 mb-0 text-light">Judge Dad</h5>
+                          <p class="text-muted">Today at 11:09AM</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div
+                        class="card bg-transparent"
+                        style="border: none; width: 300px"
+                        ;
+                      >
+                        <img
+                          src="./images/farmy.jpg"
+                          alt="member"
+                          class="card-img-top rounded card-border"
+                        />
+                           <div class="overlay">
+                            <a href="profile.html" class="icon" title="User Profile">
+                              <i class="fa fa-play-circle"></i>
+                            </a>
+                          </div>
+                       
+                      </div>
+                       <div class="card-content">
+                          <h5 class="pt-2 mb-0 text-light">
+                            FailArmy Playlist
+                          </h5>
+                          <p class="text-muted">Today at 12:09AM</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <div
+                        class="card bg-transparent"
+                        style="border: none; width: 300px"
+                        ;
+                      >
+                        <img
+                          src="./images/nos.png"
+                          alt="member"
+                          class="card-img-top rounded card-border"
+                        />
+                           <div class="overlay">
+                            <a href="profile.html" class="icon" title="User Profile">
+                              <i class="fa fa-play-circle"></i>
+                            </a>
+                          </div>
+                        
+                      </div>
+                      <div class="card-content">
+                          <h5 class="pt-2 mb-0 text-light">Judge Dad</h5>
+                          <p class="text-muted">Today at 11:09AM</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!--/.Second slide-->
+              </div>
+              <!--/.Slides-->
+            </div>
+            <!--/.Carousel Wrapper-->
+          </div>
+        </section>
+
+        <section id="movies-shows" class="pb-5">
+          <div class="title mt-4">
+            <h5 class="text-light">Movies & Shows</h5>
+          </div>
+          <div class="container-fluid">
+            <!--Carousel Wrapper-->
+            <div
+              id="multi-item-example-one"
+              class="carousel slide carousel-multi-item"
+              data-ride="carousel"
+            >
+              <!--Controls-->
+              <div class="controls-top">
+                <a
+                  class="btn-floating text-muted"
+                  href="#multi-item-example-one"
+                  data-slide="prev"
+                  ><i class="fa fa-chevron-left"></i
+                ></a>
+                <a
+                  class="btn-floating text-muted"
+                  href="#multi-item-example-one"
+                  data-slide="next"
+                  ><i class="fa fa-chevron-right"></i
+                ></a>
+              </div>
+              <!--/.Controls-->
+
+              <!--Slides-->
+              <div class="carousel-inner" role="listbox">
+                <!--First slide-->
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-lg-2 col-md-4">
+                      <a href="profile.html">
+                        <div class="card bg-transparent" style="border: none" ;>
+                          <img
+                            src="./images/movie1.jpg"
+                            alt="member"
+                            class="card-img-top rounded card-border"
+                          />
+                           <div class="overlay">
+                            <a href="profile.html" class="icon" title="User Profile">
+                              <i class="fa fa-play-circle"></i>
+                            </a>
+                          </div>
+                         
+                        </div>
+                         <div class="card-content">
+                            <h5 class="pt-2 mb-0">World War Z</h5>
+                          </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                      <div class="card bg-transparent" style="border: none" ;>
+                        <img
+                          src="./images/m1.jpg"
+                          alt="member"
+                          class="card-img-top rounded card-border"
+                        />
+                         <div class="overlay">
+                            <a href="profile.html" class="icon" title="User Profile">
+                              <i class="fa fa-play-circle"></i>
+                            </a>
+                          </div>
+                        
+                      </div>
+                      <div class="card-content">
+                          <h5 class="pt-2 mb-0">The Witcher</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                      <div class="card bg-transparent" style="border: none" ;>
+                        <img
+                          src="./images/movie3.jpg"
+                          alt="member"
+                          class="card-img-top rounded card-border"
+                        />
+                         <div class="overlay">
+                            <a href="profile.html" class="icon" title="User Profile">
+                              <i class="fa fa-play-circle"></i>
+                            </a>
+                          </div>
+                        
+                      </div>
+                      <div class="card-content">
+                          <h5 class="pt-2 mb-0">Extraction</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                      <div class="card bg-transparent" style="border: none" ;>
+                        <img
+                          src="./images/mov4.jpg"
+                          alt="member"
+                          class="card-img-top rounded card-border"
+                        />
+                         <div class="overlay">
+                            <a href="profile.html" class="icon" title="User Profile">
+                              <i class="fa fa-play-circle"></i>
+                            </a>
+                          </div>
+                       
+                      </div>
+                       <div class="card-content">
+                          <h5 class="pt-2 mb-0">Inception</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                      <div class="card bg-transparent" style="border: none" ;>
+                        <img
+                          src="./images/mov5.jpg"
+                          alt="member"
+                          class="card-img-top rounded card-border"
+                        />
+                         <div class="overlay">
+                            <a href="profile.html" class="icon" title="User Profile">
+                              <i class="fa fa-play-circle"></i>
+                            </a>
+                          </div>
+                        
+                      </div>
+                      <div class="card-content">
+                          <h5 class="pt-2 mb-0">Fight Club</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                      <div class="card bg-transparent" style="border: none" ;>
+                        <img
+                          src="./images/mo6.jpg"
+                          alt="member"
+                          class="card-img-top rounded card-border"
+                        />
+                         <div class="overlay">
+                            <a href="profile.html" class="icon" title="User Profile">
+                              <i class="fa fa-play-circle"></i>
+                            </a>
+                          </div>
+                       
+                      </div>
+                       <div class="card-content">
+                          <h5 class="pt-2 mb-0">Dunkirk</h5>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--/.First slide-->
+
+                <!--Second slide-->
+                <div class="carousel-item ">
+                  <div class="row">
+                    <div class="col-lg-2 col-md-4">
+                      <a href="profile.html">
+                        <div class="card bg-transparent" style="border: none" ;>
+                          <img
+                            src="./images/movie1.jpg"
+                            alt="member"
+                            class="card-img-top rounded card-border"
+                          />
+                           <div class="overlay">
+                            <a href="profile.html" class="icon" title="User Profile">
+                              <i class="fa fa-play-circle"></i>
+                            </a>
+                          </div>
+                         
+                        </div>
+                         <div class="card-content">
+                            <h5 class="pt-2 mb-0">World War Z</h5>
+                          </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                      <div class="card bg-transparent" style="border: none" ;>
+                        <img
+                          src="./images/m1.jpg"
+                          alt="member"
+                          class="card-img-top rounded card-border"
+                        />
+                         <div class="overlay">
+                            <a href="profile.html" class="icon" title="User Profile">
+                              <i class="fa fa-play-circle"></i>
+                            </a>
+                          </div>
+                        
+                      </div>
+                      <div class="card-content">
+                          <h5 class="pt-2 mb-0">The Witcher</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                      <div class="card bg-transparent" style="border: none" ;>
+                        <img
+                          src="./images/movie3.jpg"
+                          alt="member"
+                          class="card-img-top rounded card-border"
+                        />
+                         <div class="overlay">
+                            <a href="profile.html" class="icon" title="User Profile">
+                              <i class="fa fa-play-circle"></i>
+                            </a>
+                          </div>
+                        
+                      </div>
+                      <div class="card-content">
+                          <h5 class="pt-2 mb-0">Extraction</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                      <div class="card bg-transparent" style="border: none" ;>
+                        <img
+                          src="./images/mov4.jpg"
+                          alt="member"
+                          class="card-img-top rounded card-border"
+                        />
+                         <div class="overlay">
+                            <a href="profile.html" class="icon" title="User Profile">
+                              <i class="fa fa-play-circle"></i>
+                            </a>
+                          </div>
+                       
+                      </div>
+                       <div class="card-content">
+                          <h5 class="pt-2 mb-0">Inception</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                      <div class="card bg-transparent" style="border: none" ;>
+                        <img
+                          src="./images/mov5.jpg"
+                          alt="member"
+                          class="card-img-top rounded card-border"
+                        />
+                         <div class="overlay">
+                            <a href="profile.html" class="icon" title="User Profile">
+                              <i class="fa fa-play-circle"></i>
+                            </a>
+                          </div>
+                        
+                      </div>
+                      <div class="card-content">
+                          <h5 class="pt-2 mb-0">Fight Club</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                      <div class="card bg-transparent" style="border: none" ;>
+                        <img
+                          src="./images/mo6.jpg"
+                          alt="member"
+                          class="card-img-top rounded card-border"
+                        />
+                         <div class="overlay">
+                            <a href="profile.html" class="icon" title="User Profile">
+                              <i class="fa fa-play-circle"></i>
+                            </a>
+                          </div>
+                       
+                      </div>
+                       <div class="card-content">
+                          <h5 class="pt-2 mb-0">Dunkirk</h5>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!--/.Second slide-->
+              </div>
+              <!--/.Slides-->
+            </div>
+            <!--/.Carousel Wrapper-->
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
